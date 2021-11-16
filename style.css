@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+}
+
+* a{
+    text-decoration: none;
+    color: white;
+}
+
+.cntMargin{
+    padding: 0 13.13% 0 13.13%;
+}
+
+.textDiv{
+    border-left: solid 2px #73D3DD;
+    border-spacing: 5px;
+    margin: 0 5px 0 5px; 
+    height: 17px;
+}
+
+main{
+    background: #060537;
+}
+
+nav{
+    background-color: #060537;
+    display: flex;
+    padding: 10px 13.13% 10px 13.13%;
+    color: white;
+    width: 100%;
+    justify-content: space-between;
+}
+
+form{
+    display: flex;
+    flex-flow: column wrap;
+    height: 100%;
+    align-self: center;
+}
+
+form section{
+    display: inline-flex;
+    margin-bottom: 10px;
+}
+
+form p{
+    display: inline-flex;
+}
+
+form input{
+    border: solid 2px #73D3DD;
+    background: #0D0B55;
+    border-radius: 3px;
+    color:white;
+    margin-right: 25px;
+}
+
+form input:focus{
+    outline: none;
+}
+
+form input::placeholder{
+    color: white;
+}
+
+form button{
+    background: #0D0B55;
+    color: white;
+    border: solid 2px #73D3DD;
+    border-radius: 10px;
+    padding: 3px;
+}
+
+nav ul{
+    display: inline-flex;
+    align-items: center;
+    list-style: none;
+}
+
+nav li{
+    padding: 0 0 0 0;
+}
+
+.nmrTelefone{
+    margin-top: 10px;
+    justify-self: flex-end;
+}
+
+.mainContainer{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+aside{
+    color: white;
+    width: 215px;
+    font-size: 15px;
+}
+
+aside ul{
+    list-style: none;
+    height: max-content;
+    background: #0D0B55;
+}
+
+aside li{
+    border: 2px solid #73D3DD;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 5% 0 5%;
+}
+
+.mainContainer img{
+    border: 2px solid #73D3DD;
+}
+
+.featureGrid {
+    color: white;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr 1.8fr;
+    grid-auto-rows: 1fr;
+    gap: 15px 15px;
+    grid-auto-flow: row;
+    justify-content: space-between;
+    justify-items: center;
+    grid-template-areas:
+      "feature blankSpace"
+      "products blankSpace";
+  }
+  
+  .feature {
+    width: 100%;
+    grid-area: feature; 
+    background: #0D0B55;
+    border: 2px solid #73D3DD;
+    padding: 5px 0 5px 0;
+    border-radius: 5px;
+}
+  
+  .blankSpace {
+    width: 100%;
+    grid-area: blankSpace;
+    background: #0D0B55;
+    border: 2px solid #73D3DD;
+    border-radius: 5px;
+}
+  
+  .products {
+    width: 100%;
+    background: #0D0B55;
+    border: 2px solid #73D3DD;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1em 1em;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". ."
+      ". .";
+    grid-area: products;
+    border-radius: 5px;
+  }
+  
+.productInfo{
+    margin: 5px;
+    background: #131073;
+    padding: 5px 5px;
+}
+
+.content{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.contentLine{
+    display: inline-flex;
+}
+
+.productInfo img{
+    margin-right: 2vh;
+
+    width: 9.5vh;
+    height: 12.5vh;
+    object-fit: cover;
+}
+
+.productPrice{
+    margin: 5px 0 5px 0;
+    font-weight: 500;
+}
+
+.contentLine button{
+    background: #0D0B55;
+    color: white;
+    border: solid 2px #73D3DD;
+    border-radius: 10px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+footer{
+    height: 50px;
+    width: 100%;
+    background: #080725;
+}
